@@ -10,12 +10,13 @@ function Content() {
      fetchData();
     }, [searchVal,maxEntries,page,filterparams]);
 
+
     const getbooks=()=>{
         if(error){
             return <div className="errors">{error}</div>
         }
         else if(books.item?.length>0){
-            return books.item?.map((book)=><Bookcard book={book} key={book.id}/>)
+            return books.item?.map((book)=><Bookcard book={book} key={book.etag}/>)
         }
         else {
             return <div className="note">No results for this query.</div>

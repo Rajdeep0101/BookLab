@@ -2,8 +2,9 @@ import React from "react";
 import "./Bookcard.css";
 import { FaStar } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { ImBooks } from "react-icons/im";
 
-function Bookcard({ book }) {
+function Bookcard({ book}) {
   return (
     <div className="card">
       <div className="image">
@@ -24,6 +25,9 @@ function Bookcard({ book }) {
         </div>
         <div className="Totalpage detailsitem">
           <b>Pages:</b> {book.volumeInfo?.pageCount ?? "N/A"}
+        </div>
+        <div className="Totalpage detailsitem">
+          <b>id:</b> {book.id}
         </div>
         <div className="Rating detailsitem">
           <b>Rating:</b> {book.volumeInfo?.averageRating ?? "no-rating"}{" "}
