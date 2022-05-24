@@ -2,7 +2,21 @@ import React, { useState, createContext } from "react";
 export const InputContext = createContext();
 
 function Context(props) {
-  const [searchVal, setSearchVal] = useState("time");
+    var myArray = [
+        "all",
+        "world",
+        "india",
+        "home",
+        "light",
+        "tiger",
+        "road",
+        "less",
+        "time",
+        "prison",
+        "bad"
+      ];
+      var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+  const [searchVal, setSearchVal] = useState(randomItem);
   const [maxEntries, setMaxEntries] = useState(12);
   const [filterModal, setFilterModal] = useState(false);
   const [page, setPage] = useState(1);
