@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.filtermodal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+  min-height: calc(100vh - 3em);
+  position: fixed;
+  top: 0;
+  background-color: #242d37;
+  width: 100vw;
+}
+
+.container {
+  width: 20em;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #3e556b;
+}
+
+.heading {
+  padding: 1em;
+  font-size: medium;
+  background-color: #1c242c;
+}
+
+.filterbody {
+  padding: 0.5em 3em 1em 3em;
+}
+
+.filters {
+  margin-top: 1em;
+}
+
+.filters input {
+  padding: 0;
+  margin: 0 1.5em;
+}
+
+.filters select {
+  margin: 0 1.5em;
+  outline: none;
+  padding: 0.2em;
+  cursor: pointer;
+}
+
+.filterheading {
+  margin-bottom: 1em;
+  color: #b4b0b0;
+}
+
+.orderby {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button button {
+  font-size: smaller;
+  padding: 0.4em 0.6em;
+  margin: 1em 0em;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.Cancelbtn {
+  background-color: #f5c9c9;
+}
+
+.Applybtn {
+  background-color: #d4fbd4;
+}
+
+.Cancelbtn:hover {
+  background-color: #ff9797;
+}
+
+.Applybtn:hover {
+  background-color: #a9ffa9;
+}

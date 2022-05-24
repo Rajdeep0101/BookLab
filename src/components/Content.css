@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.book-container {
+  background-color: #242d37;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 3em;
+  min-height: calc(100vh - 3em);
+}
+
+.loading {
+  margin-top: 3em;
+  font-size: clamp(1.4rem, 3vw, 3rem);
+  color: ghostwhite;
+}
+
+.note {
+  margin-top: 3em;
+  font-size: clamp(1.4rem, 3.5vw, 3rem);
+  color: ghostwhite;
+}
+
+.errors {
+  margin-top: 3em;
+  font-size: clamp(1.4rem, 3.5vw, 3rem);
+  color: #ff6e7c;
+}
+
+.overflowtrue {
+  overflow: hidden;
+  display: none;
+}

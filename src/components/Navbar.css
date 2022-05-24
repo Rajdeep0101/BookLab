@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #ef4556;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navelem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.lielem {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  list-style: none;
+  display: flex;
+  gap: 0.3em;
+  margin-left: 0.5em;
+}
+
+.lielem li {
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+
+.bookicon {
+  font-size: 1.2em;
+}
+
+.searchform {
+  position: absolute;
+  right: 1.2em;
+  width: 18%;
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.filtericon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  vertical-align: c;
+  margin-top: 0.5em;
+}
+
+.filtericon svg {
+  height: 1.8em;
+  width: 1.8em;
+}
+
+.filtericon:hover {
+  transform: scale(1.1);
+}
+
+.searchinput {
+  width: 83%;
+  height: 2.2em;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.25em;
+  outline: none;
+}
+
+@media screen and (max-width: 900px) {
+  .searchform {
+    width: 30%;
+  }
+  .searchinput {
+    width: 82%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .searchform {
+    width: 33%;
+  }
+  .searchinput {
+    width: 81%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .searchform {
+    width: 33%;
+  }
+  .searchinput {
+    width: 73%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .searchform {
+    width: 38%;
+    gap: 0.3em;
+  }
+  .searchinput {
+    width: 72%;
+  }
+}
