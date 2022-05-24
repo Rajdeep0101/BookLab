@@ -5,10 +5,25 @@ import { ImBooks } from "react-icons/im";
 import { IconContext } from "react-icons";
 import { InputContext } from "./Context";
 function Navbar() {
-  const { setSearchVal, filterModal, setFilterModal } =
+  const { setSearchVal, filterModal, setFilterModal ,setPage} =
     useContext(InputContext);
+    var myArray = [
+      "all",
+      "world",
+      "india",
+      "home",
+      "light",
+      "tiger",
+      "road",
+      "less",
+      "time",
+      "prison",
+      "bad"
+    ];
+    var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
   const Searchhandle = (e) => {
-    e.target.value ? setSearchVal(e.target.value) : setSearchVal("all");
+    e.target.value ? setSearchVal(e.target.value) : setSearchVal(randomItem);
+    setPage(1);
   };
 
   const doSomeMagic = function (fn, d) {
