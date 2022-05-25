@@ -7,8 +7,8 @@ function Pagination() {
     useContext(InputContext);
   const maxPage = Math.ceil(books.totalItem / maxEntries);
   const handleMaxEntry = (e) => {
-    setPage(1);
     setMaxEntries(e.target.value);
+    setPage(1);
   };
   const entryValue = () => {
     const entriesArray = [];
